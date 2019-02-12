@@ -6,14 +6,14 @@ var {Client, RichEmbed, Attachment} = require('discord.js');
 global.dsbot = new Discord.Client();
 dsbot.on('ready',function () {
 
-    gm('./image.jpg')
+    gm('image.jpg')
         .flip()
         .magnify()
         .rotate('green', 45)
         .blur(7, 3)
         .crop(300, 300, 150, 130)
         .edge(3)
-        .write('./crazy.jpg', function (err) {
+        .write('crazy.jpg', function (err) {
             if(err){console.log(err)} else {
                 var embed = new RichEmbed()
                     .setColor(0x00AE86)
