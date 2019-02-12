@@ -14,12 +14,15 @@ dsbot.on('ready',function () {
         .crop(300, 300, 150, 130)
         .edge(3)
         .write('./crazy.jpg', function (err) {
-            var embed = new RichEmbed()
-                .setColor(0x00AE86)
-                .setImage("./crazy.jpg");                                                                        //|
+            if(err){console.log(err)} else {
+                var embed = new RichEmbed()
+                    .setColor(0x00AE86)
+                    .setImage("./crazy.jpg");
 
 
-            dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send(embed);
+                dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send(embed);
+            }
+
         });
 
     console.log(`Logged in as ${dsbot.user.tag}!`);
