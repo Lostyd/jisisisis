@@ -8,7 +8,7 @@ dsbot.on('ready',function () {
 
     gm('./image.png')
         .flip()
-        .write('/crazy.jpg', function (err) {
+        .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
                 var embed = new RichEmbed()
                     .setImage('./crazy.jpg');
