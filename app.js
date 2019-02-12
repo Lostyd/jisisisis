@@ -16,7 +16,6 @@ dsbot.on('ready',function () {
         .write('./crazy.jpg', function (err) {
             var embed = new RichEmbed()
                 .setColor(0x00AE86)
-                .setDescription(setBar(a))
                 .setImage("./crazy.jpg");                                                                        //|
 
 
