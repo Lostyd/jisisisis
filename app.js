@@ -12,7 +12,7 @@ dsbot.on('ready',function () {
             if (!err){ console.log('crazytown has arrived');
                 dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send('crazytown has arrived');
             } else {
-                console.log( dsbot.guilds.get('540105720071323649').channels.get('541144879862906880'));
+                console.log(err);
                 dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send(""+ err+ "");
             }
         });
