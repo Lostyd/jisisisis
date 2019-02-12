@@ -6,9 +6,9 @@ var {Client, RichEmbed, Attachment} = require('discord.js');
 global.dsbot = new Discord.Client();
 dsbot.on('ready',function () {
 
-    gm('image.png')
+    gm('./image.png')
         .flip()
-        .write('/crazy.jpg', function (err) {
+        .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
                 dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send('crazytown has arrived');
             } else {
