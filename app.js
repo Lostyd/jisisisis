@@ -8,7 +8,6 @@ dsbot.on('ready',function () {
 
     gm('image.jpg')
         .flip()
-        .magnify()
         .rotate('green', 45)
         .blur(7, 3)
         .crop(300, 300, 150, 130)
