@@ -11,7 +11,7 @@ dsbot.on('ready',function () {
         .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
                 var embed = new RichEmbed()
-                    .setImage('./crazy.jpg');
+                    .attachFile('./crazy.jpg');
 
                 dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send('lol');
                 dsbot.guilds.get('540105720071323649').channels.get('541144879862906880').send(embed);
