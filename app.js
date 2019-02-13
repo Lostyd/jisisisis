@@ -14,7 +14,7 @@ dsbot.on('ready',function () {
         .drawText(144, 168, "lvl:")
         .fill('#ffff')
         .stroke("#fff")
-        .drawRectangle(184, 135, 836, 135, 20, 20)
+        .drawRectangle(246, 135, 836, 206, 40, 40)
         .fill('#8ef753')
         .stroke()
         .drawRectangle(184, 135, 536, 135, 20, 20)
