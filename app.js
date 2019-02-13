@@ -5,10 +5,20 @@ var fs = require('fs')
 var {Client, RichEmbed, Attachment} = require('discord.js');
 global.dsbot = new Discord.Client();
 dsbot.on('ready',function () {
-
+//lvltext x74 y 144
+    //lvlbar x261 y135
+    //
+    //https://cdn.discordapp.com/avatars/204590199932452864/5a27052d1bae9c25a885c77505f3210a.png
     gm('./image.png')
-        .drawRectangle(10, 10, 100, 40 , 10, 10)
-        .fill('#fff')
+        .font("Helvetica.ttf", 12)
+        .drawText(74, 144, "lvl:")
+        .fill('#fffff')
+        .stroke("#fff")
+        .drawRectangle(261, 135, 836, 135, 20, 20)
+        .fill('#8ef753')
+        .stroke()
+        .drawRectangle(261, 135, 536, 135, 20, 20)
+
         .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
                 var embed = new RichEmbed()
