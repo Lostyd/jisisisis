@@ -10,9 +10,9 @@ dsbot.on('ready',function () {
     //
     //https://cdn.discordapp.com/avatars/204590199932452864/5a27052d1bae9c25a885c77505f3210a.png
     gm('./image.png')
-        .fontSize(12)
-        .drawText(74, 144, "lvl:")
-        .fill('#fffff')
+        .fontSize(80)
+        .drawText(144, 168, "lvl:")
+        .fill('#ffff')
         .stroke("#fff")
         .drawRectangle(184, 135, 836, 135, 20, 20)
         .fill('#8ef753')
