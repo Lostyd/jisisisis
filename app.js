@@ -10,14 +10,14 @@ dsbot.on('ready',function () {
     //
     //https://cdn.discordapp.com/avatars/204590199932452864/5a27052d1bae9c25a885c77505f3210a.png
     gm('./image.png')
-        .font("Helvetica.ttf", 12)
+        .fontSize(12)
         .drawText(74, 144, "lvl:")
         .fill('#fffff')
         .stroke("#fff")
-        .drawRectangle(261, 135, 836, 135, 20, 20)
+        .drawRectangle(184, 135, 836, 135, 20, 20)
         .fill('#8ef753')
         .stroke()
-        .drawRectangle(261, 135, 536, 135, 20, 20)
+        .drawRectangle(184, 135, 536, 135, 20, 20)
 
         .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
