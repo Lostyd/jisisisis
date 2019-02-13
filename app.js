@@ -7,7 +7,7 @@ global.dsbot = new Discord.Client();
 dsbot.on('ready',function () {
 
     gm('./image.png')
-        .drawRectangle(10, 10, 100, 10 , 1, 1)
+        .drawRectangle(10, 10, 100, 100 , 1, 1)
         .fill('#fff')
         .write('./crazy.jpg', function (err) {
             if (!err){ console.log('crazytown has arrived');
